@@ -11,13 +11,13 @@ We would all agree that a healthier lifestyle starts with what you eat. For many
 4. Friends page to track another user's progress.
 
 #### Technologies Description
-**Authentication**
+**_Authentication_**  
 A user can create a profile and log into an existing profile with a username and password that will then allow them to load previously logged data.
 
-**Database Data**
+**_Database Data_**  
 Previously logged meals will be stored in a database and then shown when the user enters the calendar view.
 
-**WebSocket Data**
+**_WebSocket Data_**  
 Users will be able to chat with their friends to encourage and congratulate them on their goals and progress.
 
 ##### Design Images

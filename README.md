@@ -21,3 +21,4 @@ Previously logged meals will be stored in a database and then shown when the use
 Users will be able to chat with their friends to encourage and congratulate them on their goals and progress.
 
 ##### Design Images
+![IMG_3537](https://github.com/connerwattles/Macro-Counter/assets/70725683/99e41f1a-9675-4f8f-8abc-e71c594f95a9)

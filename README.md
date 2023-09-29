@@ -25,7 +25,7 @@ Users will be able to chat with their friends to encourage and congratulate them
 ### Design Images
 ![IMG_3537](https://github.com/connerwattles/Macro-Counter/assets/70725683/99e41f1a-9675-4f8f-8abc-e71c594f95a9)
 
-##HTML Deliverable
+## HTML Deliverable
 
 I implemented the basic outline into HTML for my startup for this deliverable.
 

@@ -34,4 +34,5 @@ I implemented the basic outline into HTML for my startup for this deliverable.
 - **Text** The calculator page has text in each input type. There is also paragraph text in the about page describing the startup app.
 - **Images** A simple image related to the app was added in the about page.
 - **Login** Input box and submit button for login
-- ****
+- **Database** In the future logged data from the user will be shown in the calendar view as well as in the calculator page for the history of that user's day.
+- **WebSocket** An option to compare progress with friends will be implemented as well as a chat to encourage them in their nutrition goals.

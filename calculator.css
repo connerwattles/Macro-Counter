@@ -1,0 +1,9 @@
+.macro-chart {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: conic-gradient(
+        red 0% 25%, 
+        blue 25% 50%,
+        yellow 50% 100%);
+}

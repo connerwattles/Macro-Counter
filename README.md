@@ -36,3 +36,14 @@ I implemented the basic outline into HTML for my startup for this deliverable.
 - **Login** Input box and submit button for login
 - **Database** In the future logged data from the user will be shown in the calendar view as well as in the calculator page for the history of that user's day.
 - **WebSocket** An option to compare progress with friends will be implemented as well as a chat to encourage them in their nutrition goals.
+
+## CSS Deliverable
+
+I used CSS to add styling to the basic HTML I previously had.
+
+- **Header, Footer, and main content body**
+- **Navigation Elements** I changed the plain menu items to more visually appealing buttons
+- **Responsive to Window Sizing** The elements on each page respond and look well on any window size
+- **Application Elements** The elements unique to my application were styled and placed in a way that would allow the user to understand their purposes such as the calendar and chat button.
+- **Application Text Content** The text in my app is consistent in styling
+- **Application Image** The image in my about page is formatted and styled to look visually appealing on that page and shares traits such as shadowing with the text beneath

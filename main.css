@@ -17,6 +17,8 @@ header a {
   border-radius: 50px;
   text-decoration: none;
   color: black;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
 menu {
@@ -57,7 +59,7 @@ footer {
   display: flex;  
   justify-content: center;
   align-items: center;
-  background-color: #8D8741;
+  background-color: #659DBD;
   padding: 1rem;
 }
 
@@ -79,8 +81,8 @@ footer a {
 
 .footer-content {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: right;
+  align-items: right;
   flex-direction: row;
 }
 
@@ -90,10 +92,10 @@ footer a {
 
 @media (max-height: 600px) {
   header {
-    flex: 0 100px;
+    flex: 0 75px;
   }
   footer {
-    flex: 0 90px;
+    flex: 0 75px;
   }
   main {
     flex: 1 65vh;

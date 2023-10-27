@@ -1,7 +1,7 @@
 body {
   display: flex;
   flex-direction: column;
-  min-width: 375px;
+  height: 100vh;
 }
 
 header {
@@ -46,7 +46,7 @@ menu .nav-item {
 }
 
 main {
-  flex: 0 50px;
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,6 +59,7 @@ footer {
   display: flex;  
   justify-content: center;
   align-items: center;
+  align-items: flex-end;
   background-color: #659DBD;
   padding: 1rem;
 }
@@ -96,8 +97,9 @@ footer a {
   }
   footer {
     flex: 0 75px;
+    align-items: flex-end;
   }
   main {
-    flex: 1 65vh;
+    flex: 1;
   }
 }

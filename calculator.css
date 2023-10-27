@@ -8,8 +8,25 @@
         yellow 50% 100%);
 }
 
-<style>
-  .meal-log {
-    height: 200px;
-    overflow-y: scroll;
-  }
+#meal-entries-container {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    height: 100px;
+    max-height: 250px; /* Change the max-height to your desired value */
+    overflow-y: auto;
+}
+
+#fatLabel {
+    color: red;
+}
+
+#carbsLabel {
+    color: blue;
+}
+
+#proteinLabel {
+    color: yellow;
+}

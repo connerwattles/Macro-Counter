@@ -18,7 +18,7 @@
       crossorigin="anonymous"
     />
 
-    <script src="calculator.js"></script>
+    
   </head>
   <body>
     <header>
@@ -52,19 +52,19 @@
                 <input type="text" id="Food" name="Food" required>
             </form>
 
-            <form>
+            <div>
 
-              <label for="fat">Fat (g):</label>
+              <label id="fatLabel" for="fat">Fat (g):</label>
               <input type="number" id="fat" name="fat" required> 
 
-              <label for="carbs">Carbs (g):</label>
+              <label id="carbsLabel" for="carbs">Carbs (g):</label>
               <input type="number" id="carbs" name="carbs" required>
 
-              <label for="protein">Protein (g):</label>
+              <label id="proteinLabel" for="protein">Protein (g):</label>
               <input type="number" id="protein" name="protein" required>
         
               <button type="submit" onclick="addMeal()">Submit</button>
-            </form>
+            </div>
 
             <section class="meal-total">
                 <h2>Meal Total</h2>
@@ -73,19 +73,27 @@
 
         </div>
 
-        <script src="calculator.js"></script>
-
         <div class="meal-log">
           <h2>Meal Log</h2>
-          <div id="meal-entries"></div>
+          <div id="meal-entries-container">
+            <div id="meal-entries"></div>
+          </div>
         </div>
 
+        <br>
 
-        <div class="macro-chart">
+        <div class="calories">
+          <h2>Calories</h2>
+          <p id="meal-total-calories">Calories: 0</p>
+        </div>
+
+        <div class="macro-chart" id="macro-chart">
             <canvas id="myChart" width="600" height="200"></canvas>
         </div>
         <br/>
     </main>
+
+    <script src="calculator.js"></script>
 
     <footer>
       <hr>
@@ -95,27 +103,5 @@
         <a href="https://github.com/connerwattles/Macro-Counter.git">GitHub</a>
       </div>
     </footer>
-
-    <script>
-      function addMeal() {
-        const meal = document.getElementById("meal").value;
-        const food = document.getElementById("Food").value;
-        const fat = document.getElementById("fat").value;
-        const carbs = document.getElementById("carbs").value;
-        const protein = document.getElementById("protein").value;
-    
-        const mealEntries = document.getElementById("meal-entries");
-        const mealEntry = document.createElement("tr");
-        mealEntry.innerHTML = `
-        <td>${meal}</td>
-        <td>${food}</td>
-        <td>${fat}g</td>
-        <td>${carbs}g</td>
-        <td>${protein}g</td>
-      `;
-        mealEntries.appendChild(mealEntry);
-      }
-    </script>
-
   </body>
 </html>

@@ -58,3 +58,13 @@ For this deliverable I implemented JavaScript into my startup so the application
 - **Application Logic** The majority of the JavaScript added to my application was in the calculator page. The application now logs food entries in the meal log box and below that a total calorie
                         number will be shown that is calculated based on how many calories are in a gram of each macro. I also implemented a dynamic pie chart that will update with the total calories
                         from each of the three macronutrients based on the total calories.
+
+## Service Deliverable
+
+For this deliverable I added backend endpoints that receive inputted calories for food items and the calendar view displays them in a list.
+
+- **Node.js/Express HTTP service** Done!
+- **Static middleware for frontend** Done!
+- **Third party endpoints** Called in the about page to load a random image
+- **Backend service endpoints** Endpoints for post on calories and get on calories
+- **Frontend calls service endpoints** Fetch!

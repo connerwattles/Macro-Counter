@@ -47,3 +47,14 @@ I used CSS to add styling to the basic HTML I previously had.
 - **Application Elements** The elements unique to my application were styled and placed in a way that would allow the user to understand their purposes such as the calendar and chat button.
 - **Application Text Content** The text in my app is consistent in styling
 - **Application Image** The image in my about page is formatted and styled to look visually appealing on that page and shares traits such as shadowing with the text beneath
+
+## JavaScript Deliverable
+
+For this deliverable I implemented JavaScript into my startup so the application has functionality to the login, calculator, and calendar. I also have placeholders for future websocket and database data.
+
+- **login** When you press the login button it takes you to the calculator page and saves your username in local data
+- **database** Database data will be implemented through the calendar view. As the user selects a day their history of inputted macronutrients will be displayed as a piechart
+- **WebSocket** I implemented a popup chat box in the calendar page that will eventually allow the user to select a friend and chat with them
+- **Application Logic** The majority of the JavaScript added to my application was in the calculator page. The application now logs food entries in the meal log box and below that a total calorie
+                        number will be shown that is calculated based on how many calories are in a gram of each macro. I also implemented a dynamic pie chart that will update with the total calories
+                        from each of the three macronutrients based on the total calories.

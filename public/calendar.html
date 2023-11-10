@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Macro Calculator</title>
+    <link rel="icon" href="nutrition_icon_136342.ico" />
+
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="calendar.css" />
+
+
+    <!-- Include bootstrap CSS framework -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Macro Counter<sup></sup></h1>
+
+      <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="calculator.html">Calculator</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="about.html">About</a>
+      </div>
+    </header>
+    
+    
+    
+    <main>
+        <table class="table table-warning table-striped-columns">
+          <thead class="table-dark">
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Food Name</th>
+              <th>Total Calories</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody id="log"></tbody>
+        </table>
+
+        <!--<label for="month">Select a Month:</label>
+          <select id="month" name="month">
+              <option value="January">January</option>
+              <option value="February">February</option>
+              <option value="March">March</option>
+              <option value="April">April</option>
+              <option value="May">May</option>
+              <option value="June">June</option>
+              <option value="July">July</option>
+              <option value="August">August</option>
+              <option value="September">September</option>
+              <option value="October" selected>October</option>
+              <option value="November">November</option>
+              <option value="December">December</option>
+          </select>
+
+          <label for="year">Select a Year:</label>
+          <select id="year" name="year">
+              <option value="2015">2015</option>
+              <option value="2016">2016</option>
+              <option value="2017">2017</option>
+              <option value="2018">2018</option>
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+              <option value="2022">2022</option>
+              <option value="2023" selected>2023</option>
+          </select>
+
+      
+          <div style="display: flex; justify-content: center;">
+              <table id="calendar" style="border-collapse: collapse;">
+              </table>
+          </div>-->
+
+          
+          <br>
+    
+            <button onclick="openChat()">Chat</button>
+
+            <div id="chat-box" style="display: none;">
+              <h2>Chat with Friends</h2>
+              <label for="friend-select">Select a Friend:</label>
+              <select id="friend-select" name="friend-select">
+                <option value="friend1">Friend 1</option>
+                <option value="friend2">Friend 2</option>
+                <option value="friend3">Friend 3</option>
+              </select>
+              <button onclick="startChat()">Start Chat</button>
+            </div>
+      
+            
+  </main>
+
+    <footer>
+      <hr>
+      <div class="footer-content">
+        <span class="text-reset">Conner Wattles</span>
+        <br>
+        <a href="https://github.com/connerwattles/Macro-Counter.git">GitHub</a>
+      </div>
+    </footer>
+    <script src="calendar.js"></script>
+  </body>
+</html>

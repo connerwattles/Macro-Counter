@@ -3,7 +3,7 @@ const config = require('./dbConfig.json');
 
 const url = `mongodb+srv://${config.userName}:${config.password}@${config.hostname}`;
 const client = new MongoClient(url);
-const db = client.db('simon');
+const db = client.db('MacroCounter');
 const calorieCollection = db.collection('calories');
 
 // This will asynchronously test the connection and exit the process if it fails
@@ -21,7 +21,7 @@ async function addCalories(calories) {
 }
 
 function getCalories() {
-    const query = { calories: { $gt: 0, $lt: 10000} };
+    const query = { calories: { $gt: 0 } };
     const cursor = calorieCollection.find(query);
     return cursor.toArray();
 }

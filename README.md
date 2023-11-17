@@ -1,7 +1,7 @@
 # Macro-Counter
 Web program for Macro Counter CS260
 
-##Description Deliverable
+## Description Deliverable
 
 ### Elevator Pitch
 We would all agree that a healthier lifestyle starts with what you eat. For many of us, it is so difficult to eat better and achieve our healthier lifestyle goals because of how difficult it can be to track your progress. The macro counter application aims to make those difficult and tedious tasks of tracking macronutrients so much simpler. It will allow you to log into a profile and log the total grams of macronutrients you have consumed for each meal of the day. The app will then allow you to easily view the total number of calories you have consumed and the data from previous days. You can even link profiles with a friend so you can help each other reach their goals.
@@ -68,3 +68,8 @@ For this deliverable I added backend endpoints that receive inputted calories fo
 - **Third party endpoints** Called in the about page to load a random image
 - **Backend service endpoints** Endpoints for post on calories and get on calories
 - **Frontend calls service endpoints** Fetch!
+
+## DB Deliverable
+- **MongoDB Atlas database created** Done!
+- **Endpoints for data** My endpoints now store the data in my mongo database
+- **Stores data in MongoDB** Done!

@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const DB = require('./database.js')
 
 // The service port. In production the front-end code is statically hosted by the service on the same port.
 const port = process.argv.length > 2 ? process.argv[2] : 3000;
@@ -14,16 +15,21 @@ app.use(express.static('public'));
 var apiRouter = express.Router();
 app.use(`/api`, apiRouter);
 
-// GetScores
-apiRouter.get('/calories', (_req, res) => {
-    console.log(calories);
+// GetCalories
+apiRouter.get('/calories', async (_req, res) => {
+  const calories = await DB.getCalories();
+
+  console.log(calories);
+
   res.send(calories);
 });
 
-// SubmitScore
-apiRouter.post('/calories', (req, res) => {
-    console.log(req.body);
-    storeCalories(req.body);
+// SubmitCalories
+apiRouter.post('/calories', async (req, res) => {
+  console.log(req.body);
+
+  DB.addCalories(req.body);
+  const calories = await DB.getCalories();
   res.send(calories);
 });
 
@@ -35,8 +41,3 @@ app.use((_req, res) => {
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });
-
-let calories = [];
-function storeCalories(newCalories) {
-    calories.push(newCalories);
-}

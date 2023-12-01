@@ -76,6 +76,12 @@ For this deliverable I added backend endpoints that receive inputted calories fo
 
 ## Login Deliverable
 - **User Registration** Creates a new account in the database
-- **Existing User** Attaches logged calories to the user if they relogin
+- **Existing User** Attaches logged calories to the user if they re-login
 - **Use MongoDB to Store Credentials**
 - **Restricts Functionality** User cannot do anything before creating an account or logging in
+
+## WebSocket Deliverable
+- **Backend listens for WebSocket connection** Done!
+- **Frontend makes WebSocket connection** Done!
+- **Data sent over Websocket connection** Messages from users who are connected get sent
+- **WebSocket data displayed** All messages are displayed in the pop up chat window. There is also a message for WebSocket connection on and off

@@ -84,18 +84,20 @@
           
           <br>
     
-            <button onclick="openChat()">Chat</button>
+          <button onclick="openChat()">Chat</button>
 
-            <div id="chat-box" style="display: none;">
-              <h2>Chat with Friends</h2>
-              <label for="friend-select">Select a Friend:</label>
-              <select id="friend-select" name="friend-select">
-                <option value="friend1">Friend 1</option>
-                <option value="friend2">Friend 2</option>
-                <option value="friend3">Friend 3</option>
-              </select>
-              <button onclick="startChat()">Start Chat</button>
+          <div id="chat-box" style="display: none; width: 400px;">
+            <h2>Chat with Friends</h2>
+            <div id="message-box" style="height: 200px; overflow-y: scroll;">
+              <!-- Messages will be appended here -->
             </div>
+            <button onclick="startChat()">Start Chat</button>
+            <br>
+            <div id="message-field" style="display: none; flex-direction: row;">
+              <input type="text" id="messageInput" placeholder="Type your message here...">
+              <button onclick="sendMessage()">Send</button>
+            </div>
+          </div>
       
             
   </main>

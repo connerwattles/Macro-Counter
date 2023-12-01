@@ -40,15 +40,14 @@ monthSelect.onload = initialCalendar(() => {
 function openChat() {
     var chatBox = document.getElementById("chat-box");
     chatBox.style.display = chatBox.style.display === "none" ? "block" : "none";
+
+    var messageField = document.getElementById("message-field");
+    messageField.style.display = "none";
 }
   
 function startChat() {
-    var friendSelect = document.getElementById("friend-select");
-    var friend = friendSelect.value;
-    // code to start chat with selected friend
-
-    var chatBox = document.getElementById("chat-box");
-    chatBox.style.display = chatBox.style.display === "none" ? "block" : "none";
+    var messageField = document.getElementById("message-field");
+    messageField.style.display = "flex";
 }
 
 async function loadCalories() {
@@ -104,3 +103,46 @@ function displayCalories(calories) {
 }
 
 loadCalories();
+
+function configureWebSocket() {
+    socket.onopen = (event) => {
+        appendMsg('system', 'websocket', 'connected');
+    };
+    socket.onclose = (event) => {
+        appendMsg('system', 'websocket', 'disconnected');
+    };
+    socket.onmessage = async (event) => {
+        const text = await event.data.text();
+        const chat = JSON.parse(text);
+        appendMsg('friend', chat.name, chat.msg);
+    };
+}
+
+function sendMessage() {
+    const msgEl = document.querySelector('#messageInput');
+    const msg = msgEl.value;
+    if (!!msg) {
+      appendMsg('me', 'me', msg);
+      const name = 'User';                                      //FIX THIS: get name from user
+      socket.send(`{"name":"${name}", "msg":"${msg}"}`);
+      msgEl.value = '';
+    }
+}
+
+function appendMsg(cls, from, msg) {
+    const messageBox = document.querySelector('#message-box');
+
+    // Create a new div element
+    const messageDiv = document.createElement('div');
+    messageDiv.className = cls;
+
+    // Set the text content of the div
+    messageDiv.textContent = `${from}: ${msg}`;
+
+    // Append the new div to the message box
+    messageBox.appendChild(messageDiv);
+}
+
+const protocol = window.location.protocol === 'http:' ? 'ws' : 'wss';
+const socket = new WebSocket(`${protocol}://${window.location.host}/ws`);
+configureWebSocket();

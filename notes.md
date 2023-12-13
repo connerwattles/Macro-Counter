@@ -3266,3 +3266,123 @@ So, in summary, while A records are for mapping to IPv4 addresses, CNAME records
 ## What will the following code using Promises output when executed?
 
 
+
+
+
+
+
+# Final Study Guide
+
+1. What ports are used for HTTP, HTTPS, SSH?
+   80, 443, 22 (in order)
+2. What do HTTP status codes in the 300, 400, 500 range indicate?
+   redirection messages, client error, server error (in order)
+3. What does the HTTP header content-type allows you to do?
+   What type of content we are dealing with: JSON, HTML Plain text, etc.
+4. What do the following attributes of a cookie do?
+- Domain: what domain its coming from
+- Path: What path its coming from
+- SameSite: only return the cookie to the domain that generated it
+- HTTPOnly: tells the browser to not allow js to run on browser
+5. Assuming the following Express middleware, what would be the console.log output for an HTTP GET request with a URL path of /foo/bar?
+  There will be code with console log statements for different functions. Determine which functions are called and in what order.
+6. Given the following Express service code: What does the following JavaScript fetch return?
+  There will be code given. Fetch requests return the results of the communication to the server ex status code or data. An express service code is everything related to const app = express and its middleware functions in the backend server 
+7. Given the following MongoDB query
+
+{ cost: { $gt: 10 }, name: /fran.*/}
+select all of the matching documents.
+  Grab the documents where the cost is greater than 10 and the name has fran as well as any other character. Returns array of all matching documents
+8. How should you store user passwords in a database?
+  Hashed and salted
+9. Assuming the following Node.js service code is executing with websockets, what will be logged to the console of the web browser?
+  Given scenarios such as client connected and client disconnected
+10. What is the WebSocket protocol used for?
+  Making calls from the client to server and back. Key aspect is either client or server can initiate the contact
+11. What is JSX and how are the curly braces rendered?
+  JavaScript and html combined. Anything after the key word return is rendered to the screen
+12. Assuming a HTML document with a 
+<div id="root"></div>
+element, what content will the following React component generate?
+      function Welcome(props) {
+        return <h1>Hello, {props.name}</h1>;
+      }
+      function App() {
+        return (
+          <div>
+            <Welcome name="Sara" />
+            <Welcome name="Cahal" />
+            <Welcome name="Edite" />
+          </div>
+        );
+      }
+      const root = ReactDOM.createRoot(document.getElementById('root'));
+      root.render(<App />);
+
+  Hello, Sara
+  Hello, Cahal
+  Hello, Edite
+13. Assuming a HTML document with a 
+<div id="root"></div>
+element, what content will the following React component generate?
+    function Numbers() { 
+      const numbers = [1, 2, 3, 4, 5];
+      const listItems = numbers.map((number) =>
+        <li>{number}</li>
+      );
+      return(<ul>{listItems}</ul>)
+    }
+    const root = ReactDOM.createRoot(document.getElementById('root')); 
+    root.render(<Numbers/>);
+
+  1 
+  2 
+  3 
+  4 
+  5 using the unordered list html element separating each number with bullet points
+14. What does the following React component do?
+function Example() {
+  // Declare a new state variable, which we'll call "count"  
+  const [count, setCount] = useState(0);
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+    </div>
+  );
+}
+
+  Increase the count everytime the button is clicked and render You clicked _ times
+15. What are React Hooks used for?
+  Modify the state of the component. Handles the live socket events of the component ex: onCreate, onDestroy
+16. What is the useEffect hook used for?
+  Life cycle event for the component and runs based on the life cycle event. Updates the render
+17. What does this code do?
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="blogs" element={<Blogs />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+  Sets the routes for different pages. Just / will render layout, /UserName will render NoPage becasue of *
+18. What role does npm play in web development?
+  It manages your node packages and allows you to download 3rd party packages
+19. What does package.json do in a npm project?
+  It lists all your packages it has, it specifies certain scripts such as the deployment script, contains the name of the project, version, description, and what file to run project with
+20. What does the fetch function do?
+  The JavaScript fetch interface acts as a means for fetching resources (including across the network). It also uses a global fetch() method that provides an easy, logical way to get resources asynchronously across networks. This method is also available when instructing web browsers to send a request to a URL.
+21. What does node.js do?
+  Runs the server
+22. What does Vite do?
+  Allows you to bundle all code together for production to display react components

@@ -1,0 +1,32 @@
+.macro-chart {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: conic-gradient(
+        red 0% 25%, 
+        blue 25% 50%,
+        yellow 50% 100%);
+}
+
+#meal-entries-container {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    height: 100px;
+    max-height: 250px; /* Change the max-height to your desired value */
+    overflow-y: auto;
+}
+
+#fatLabel {
+    color: red;
+}
+
+#carbsLabel {
+    color: blue;
+}
+
+#proteinLabel {
+    color: yellow;
+}

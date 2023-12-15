@@ -1,0 +1,55 @@
+label {
+    color:black;
+}
+
+select {
+    color: black;
+    background-color: lightgrey;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+table {
+    background-color: lightgrey;
+    align-items: center;
+    padding: 21px;
+}
+
+select {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    color: #888;
+}
+
+#chat-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 9999;
+}
+
+#chat-box h2 {
+    margin-top: 0;
+}
+
+#chat-box label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#chat-box select {
+    margin-bottom: 10px;
+}
+
+#chat-box button {
+    display: block;
+    margin: 10px auto 0;
+}
+

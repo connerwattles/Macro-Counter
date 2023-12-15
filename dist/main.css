@@ -1,0 +1,105 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  flex: 0 0 100px;
+  background-color: #FBEEC1;
+  float: left;
+}
+
+header a {
+  display: flex;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  color: black;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+menu {
+  flex: 1;
+  display: flex;
+  /*  overwrite Bootstrap so the menu does not wrap */
+  flex-direction: row !important;
+  list-style: none;
+}
+
+.navbar {
+    flex: 1;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.navbar-brand {
+  padding-left: 0.3em;
+  border-bottom: solid rgb(182, 182, 182) thin;
+}
+
+menu .nav-item {
+  padding: 0 0.3em;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #659DBD;
+}
+
+footer {
+  flex: 0 0 90px;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  align-items: flex-end;
+  background-color: #659DBD;
+  padding: 1rem;
+}
+
+footer a {
+  display: flex;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  color: black;
+}
+
+.text-reset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  flex-direction: row;
+}
+
+.footer-content a {
+  margin: 0.5rem;
+}
+
+@media (max-height: 600px) {
+  header {
+    flex: 0 75px;
+  }
+  footer {
+    flex: 0 75px;
+    align-items: flex-end;
+  }
+  main {
+    flex: 1;
+  }
+}

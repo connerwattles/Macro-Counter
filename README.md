@@ -85,3 +85,9 @@ For this deliverable I added backend endpoints that receive inputted calories fo
 - **Frontend makes WebSocket connection** Done!
 - **Data sent over Websocket connection** Messages from users who are connected get sent
 - **WebSocket data displayed** All messages are displayed in the pop up chat window. There is also a message for WebSocket connection on and off
+
+## React Deliverable
+- **Bundled and Transpiled** Done!
+- **Components** Login, Calculator, Calendar of logged foods, About
+- **Router** Router between login and app components
+- **Hooks** useEffect
